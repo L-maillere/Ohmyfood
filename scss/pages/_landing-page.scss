@@ -1,0 +1,144 @@
+.intro-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $colour-grey-1;
+    h2 {
+        font-family: 'Roboto';
+        font-size: 24px;
+        font-weight: 700;
+        width: 275px;
+        height: 68px;
+        line-height: 28.13px;
+        text-align: center;
+        margin: 39px auto 0;
+    }
+    p {
+        font-size: 18px;
+        width: 315px;
+        line-height: 21.09px;
+        text-align: center;
+        margin: auto;
+    }
+    &__btn {
+        width: 218px;
+        margin: 27px auto 57px;
+    }
+}
+
+.functioning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 20px 0px;
+    height: 440px;
+    h3 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 13px;
+        width: 100%;
+    }
+    &__card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        width: 335px;
+    }
+    &__card {
+        position: relative;
+        display: flex;
+        width: 322.49px;
+        height: 72.38px;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: $colour-grey-1;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        margin: 13px 0;
+    }
+    &__number {
+        display: inline-block;
+        font-family: 'Roboto';
+        font-size: 14.18px;
+        padding: 5px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: $colour-primary;
+        color: $colour-white;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        left: -12px;
+    }
+    &__icon {
+        font-size: 16px;
+        text-align: center;
+        color: $colour-grey-3;
+        transform: translateX(10px);
+    }
+    &__text {
+        width: 211px;
+        font-size: 16px;
+        font-weight: 500;
+        transform: translateX(10px);
+    }
+}
+
+.restaurants {
+    background-color: $colour-grey-1;
+    padding-top: 47px;
+    padding-bottom: 55px;
+    h3 {
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0px 20px 30px;
+    }
+    &__card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__card {
+        display: block;
+        width: 340.91px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        overflow: hidden;
+        margin: 9px 0;
+        text-decoration: none;
+        color: black;
+    }
+    &__pic {
+        position: relative;
+        width: 100%;
+        height: 174px;
+        img {
+            width: 340.91px;
+            height: 231px;
+            object-fit: cover;
+            transform: translateY(-53.52px);
+        }
+    }
+    &__desc {
+        position: relative;
+        height: 77px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        a {
+            width: 100%;
+            text-decoration: none;
+            color: black;
+        }
+    }
+    &__text {
+        margin: 16px 0px 12px 13px;
+    }
+    &__heart {
+        position: absolute;
+        font-size: 21px;
+        right: 25px;
+    }
+}

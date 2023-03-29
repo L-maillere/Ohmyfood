@@ -1,0 +1,143 @@
+/*@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/extensions"; */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h1,
+h2 {
+  font-family: "Shrikhand";
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+h3,
+h4,
+p {
+  font-family: "Roboto";
+}
+
+.grad-btn {
+  color: #fff;
+  height: 50px;
+  padding: 15px 16px;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 25px;
+  border: 0;
+  background: linear-gradient(175deg, #FF79DA -5.2%, #9356DC 110.74%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  text-decoration: none;
+}
+
+.header {
+  background-color: #EAEAEA;
+}
+.header__logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 63px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  z-index: 1;
+  width: 100%;
+}
+.header__location {
+  position: relative;
+  height: 50px;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.header__location i {
+  color: #353535;
+  margin-left: -17px;
+}
+.header__location p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 17px;
+}
+
+/*@import "./layouts/container";
+@import "./layouts/form"; */
+.intro-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #F6F6F6;
+}
+.intro-banner h2 {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 700;
+  width: 275px;
+  height: 68px;
+  line-height: 28.13px;
+  text-align: center;
+  margin: 39px auto 0;
+}
+.intro-banner p {
+  font-size: 18px;
+  width: 315px;
+  line-height: 21.09px;
+  text-align: center;
+  margin: auto;
+}
+.intro-banner__btn {
+  width: 218px;
+  margin: 27px auto 57px;
+}
+
+.functioning {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 48px 0px 26px 20px;
+}
+.functioning h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.functioning__card {
+  width: 322.49px;
+}
+/*@import "./pages/about";
+@import "./pages/project";*//*# sourceMappingURL=main.css.map */

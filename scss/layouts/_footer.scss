@@ -1,0 +1,31 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $colour-grey-4;
+    color: $colour-white;
+    padding-left: 25px;
+    h5 {
+        font-family: 'Shrikhand';
+        font-weight: 400;
+        margin: 22px 0 16px;
+    }
+    a {
+        font-family: 'Roboto';
+        margin-bottom: 7px;
+        font-size: 16px;
+        text-decoration: none;
+        color: $colour-grey-1;
+    }
+    &__link {
+        font-weight: 400;
+    }
+    &__icon-and-link {
+        font-weight: 500;
+        i {
+            font-size: 13px;
+            text-align: center;
+            width: 16px;
+            margin-right: 3px;
+        }
+    }
+}
