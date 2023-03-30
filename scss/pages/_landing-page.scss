@@ -75,6 +75,9 @@
         text-align: center;
         color: $colour-grey-3;
         transform: translateX(10px);
+        &--purple {
+            color: $colour-primary;
+        }
     }
     &__text {
         width: 211px;
@@ -135,10 +138,5 @@
     }
     &__text {
         margin: 16px 0px 12px 13px;
-    }
-    &__heart {
-        position: absolute;
-        font-size: 21px;
-        right: 25px;
     }
 }
