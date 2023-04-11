@@ -54,4 +54,24 @@
     position: absolute;
     font-size: 21px;
     right: 25px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    &--empty {
+        z-index: 2;
+        &:hover {
+            opacity: 0;
+            color: transparent;
+            ~ .btn__heart--gradient {
+                opacity: 1;
+            }
+        }
+    }
+    &--gradient {
+        opacity: 0;
+        z-index: 1;
+        color: transparent;
+        background: linear-gradient(175deg, $colour-secondary -5.2%, $colour-primary 110.74%);
+        -webkit-background-clip: text;
+        transition: opacity 300ms ease-in;        
+    }
 }

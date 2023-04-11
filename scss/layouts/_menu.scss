@@ -31,6 +31,7 @@
         margin-bottom: 12px;
         margin-top: 40px;
         border-bottom: 3px solid $colour-light-green;
+        animation: Slidefromleft 1000ms both;
     }
     &__card {
         position: relative;
@@ -38,18 +39,108 @@
         flex-direction: column;
         justify-content: center;
         height: 69px;
-        padding: 0 15px;
         margin-bottom: 12px;
         box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
         border-radius: 15.0431px;
         background-color: $colour-white;
+        width: 100%;
+        transition: width 300ms ease;
+        animation: Slidefromleft 500ms both;
         &:last-of-type {
             margin-bottom: -55px;
+        }
+        &:nth-child(4) {
+            animation-delay: 0.1s;
+        }
+        &:nth-child(5) {
+            animation-delay: 0.2s;
+        }
+        &:nth-child(7) {
+            animation-delay: 0.3s;
+        }
+        &:nth-child(8) {
+            animation-delay: 0.4s;
+        }
+        &:nth-child(9) {
+            animation-delay: 0.5s;
+        }
+        &:nth-child(11) {
+            animation-delay: 0.6s;
+        }
+        &:nth-child(12) {
+            animation-delay: 0.7s;
+        }
+        &:nth-child(13) {
+            animation-delay: 0.8s;
+        }
+        &--ten {
+            &:nth-child(4) {
+                animation-delay: 0.1s;
+            }
+            &:nth-child(5) {
+                animation-delay: 0.2s;
+            }
+            &:nth-child(6) {
+                animation-delay: 0.3s;
+            }
+            &:nth-child(8) {
+                animation-delay: 0.4s;
+            }
+            &:nth-child(9) {
+                animation-delay: 0.5s;
+            }
+            &:nth-child(10) {
+                animation-delay: 0.6s;
+            }
+            &:nth-child(12) {
+                animation-delay: 0.7s;
+            }
+            &:nth-child(13) {
+                animation-delay: 0.8s;
+            }
+            &:nth-child(14) {
+                animation-delay: 0.9s;
+            }
+        }
+    }
+    &__text {
+        position: relative;
+        transition: all 300ms ease;
+        width: 100%;
+        padding: 15.25px 15px;
+        background-color: $colour-white;
+        border-radius: 15.0431px;
+        h4, p {
+            max-width: calc(100% - 43px);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        &:hover {
+            width: calc(100% - 59px);
+            border-radius: 15.0431px 0px 0 15.0431px;
+        }
+        z-index: 1;
+    }
+    &__checkmark {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        height: 69px;
+        width: 59px;
+        right: 0px;
+        border-radius: 0 15.0431px 15.0431px 0;
+        background-color: $colour-light-green;
+        z-index: 0;
+        i {
+            font-size: 20px;
+            color: $colour-white;
         }
     }
     &__price {
         position: absolute;
-        right: 15px;
+        right: 16px;
         bottom: 13.5px;
     }
     &__btn {
@@ -62,5 +153,16 @@
         width: 100%;
         justify-content: center;
         margin: 40px 0;
+    }
+
+    @keyframes Slidefromleft {
+        0% {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
     }
 }
