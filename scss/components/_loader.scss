@@ -11,7 +11,7 @@
     animation: fadeOut 3s ease-out forwards;
     p {
         position: absolute;
-        top: 50.5%;
+        top: calc(50% - 6px);
         font-size: 12px;
         font-weight: 500;
         color: $colour-primary;
@@ -26,7 +26,7 @@
     border-top: 4px solid $colour-primary;
     width: 100px;
     height: 100px;
-    top: 45%;
+    top: calc(50% - 50px);
     animation: spin 1.5s linear 3;
     margin: 0 auto;
     &__logo {
