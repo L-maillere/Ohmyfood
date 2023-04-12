@@ -12,6 +12,13 @@
         line-height: 28.13px;
         text-align: center;
         margin: 39px auto 0;
+        @include desktop {
+            width: 645px;
+            height: 47px;
+            font-size: 40px;
+            line-height: 46.88px;
+            margin: 30px auto 18px;
+        }
     }
     p {
         font-size: 18px;
@@ -19,10 +26,18 @@
         line-height: 21.09px;
         text-align: center;
         margin: auto;
+        @include desktop {
+            width: 531px;
+            height: 46px;
+            line-height: 45.88px;
+        }
     }
     &__btn {
         width: 218px;
         margin: 27px auto 57px;
+        @include desktop {
+            margin: 18px auto 30px;
+        }
     }
 }
 
@@ -32,6 +47,10 @@
     align-items: center;
     padding: 48px 20px 0px;
     height: 440px;
+    @include desktop {
+        padding: 50px 180px 0;
+        height: 228.38px;
+    }
     h3 {
         font-size: 24px;
         font-weight: 700;
@@ -43,6 +62,11 @@
         flex-direction: column;
         align-items: end;
         width: 335px;
+        @include desktop {
+            flex-direction: row;
+            width: 100%;
+            justify-content: center;
+        }
     }
     &__card {
         position: relative;
@@ -55,6 +79,9 @@
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
         border-radius: 20px;
         margin: 13px 0;
+        @include desktop {
+            margin: 13px 18.25px;     
+        }
     }
     &__number {
         display: inline-block;
@@ -91,16 +118,26 @@
     background-color: $colour-grey-1;
     padding-top: 47px;
     padding-bottom: 55px;
+    @include desktop {
+        padding: 30px 0px 5px;
+    }
     h3 {
         font-size: 24px;
         font-weight: 700;
         margin: 0px 20px 30px;
+        @include desktop {
+            margin: 0px 0px 3px 180px;
+        }
     }
     &__card-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        @include desktop {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
     }
     &__card {
         display: block;
@@ -111,6 +148,10 @@
         margin: 9px 0;
         text-decoration: none;
         color: black;
+        @include desktop {
+            width: 490px;
+            margin: 25px 50px;
+        }
     }
     &__pic {
         position: relative;
@@ -121,6 +162,9 @@
             height: 231px;
             object-fit: cover;
             transform: translateY(-53.52px);
+            @include desktop {
+                width: 490px;
+            }
         }
     }
     &__desc {
@@ -138,5 +182,11 @@
     }
     &__text {
         margin: 16px 0px 12px 13px;
+        h4 {
+            font-weight: 700;
+        }
+        p {
+            font-size: 17px;
+        }
     }
 }

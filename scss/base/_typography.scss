@@ -1,5 +1,8 @@
 h1 {
     font-size: 30px;
+    @include desktop {
+        font-size: 34px;
+    }
 }
 
 h2 {

@@ -47,19 +47,19 @@
 
 @keyframes bump {
     0% {
-        scale: 1;
+        transform: scale(1);
     }
     25% {
-        scale: 1.1;
+        transform: scale(1.1);
     }
     50% {
-        scale: 1;
+        transform: scale(1);
     }
     75% {
-        scale: 0.9;
+        transform: scale(0.9);
     }
     100% {
-        scale: 1;
+        transform: scale(1);
     }
 
 }
