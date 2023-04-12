@@ -351,6 +351,7 @@ p {
     display: flex;
     flex-direction: column;
     border-radius: 38px 38px 0 0;
+    overflow: hidden;
   }
 }
 .menu__header {
